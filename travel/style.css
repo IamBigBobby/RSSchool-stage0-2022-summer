@@ -1,0 +1,24 @@
+/* general */
+*{
+    border: 1px solid red;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+/* header */
+.header-img{
+    background-image: url(assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.png);
+    height: 765px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background: rgba(242, 120, 92, 0.7);
+}
