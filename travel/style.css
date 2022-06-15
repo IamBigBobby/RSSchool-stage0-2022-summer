@@ -1,12 +1,12 @@
 /* general */
-*{
-    /* border: 1px solid red; */
+:root{
+    --nav-font: 'Red Hat Text', sans-serif;
+    --button-font: 'Red Hat Text', sans-serif;
+    --main-font: 'Aleo', serif;
 }
 body{
     margin: 0;
     padding: 0;
-    /* font-family: 'Aleo', serif; */
-    /* font-family: 'Roboto', sans-serif; */
 }
 .wrapper{
     margin: 0 auto;
@@ -25,12 +25,14 @@ body{
     align-items: center;
     background: rgba(242, 120, 92, 0.7);
     height: 90px;
-    font-family: 'Red Hat Text', sans-serif;
+    font-family: var(--nav-font);
     font-size: 16px;
 }
 .header-logo{
     height: 31px;
     width: 216px;
+    padding-left: 50px;
+    padding-bottom: 10px;
 }
 .navigation{
     display: flex;
@@ -39,6 +41,7 @@ body{
     margin: 0;
     padding: 0;
     width: 550px;
+    padding-left: 10px;
 }
 .nav-link a{
     display: block;
@@ -53,9 +56,69 @@ body{
 }
 .login-button{
     color: white;
+    font-family: var(--button-font);
     font-size: 16px;
     padding: 10px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: #0D606F;
+    border: none;
+}
+/* face-content */
+.face-content{
+    font-family: var(--main-font) ;
+    width: 892px;
+    height: 422px;
+    margin-left: 120px;
+    margin-top: 32px;
+    padding:0;
+    color: white;
+}
+h1{
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+}
+.face-content p{
+    font-size:20px;
+    margin-top: 30px;
+}
+/* .find-menu */
+.find-menu{
+    position: relative;
+    border-radius: 16px;
+    padding: 0;
+    margin-top: 50px;
+}
+.find-menu input[type="text"]{
+    padding-top: 32px;
+    padding: 41px;
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    border: none;
+    font-size: 24px;
+    font-family: var(--main-font);
+    font-style: italic;
+    color:#F2785C;
+}
+.find-menu input[type="submit"]{
+    position: absolute;
+    width: 228px;
+    height: 59px;
+    background-color:#0D606F;
+    right: 20px;
+    top: 20px;
+    border-radius: 10px;
+    font-family: var(--button-font);
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+.find-menu input::placeholder{
+    color: black;
+    font-size: 24px;
+    font-style: italic;
+    color:#F2785C;
+    opacity: 0.7;
 }
