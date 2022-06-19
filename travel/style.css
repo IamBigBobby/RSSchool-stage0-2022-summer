@@ -3,6 +3,7 @@
     --nav-font: 'Red Hat Text', sans-serif;
     --button-font: 'Red Hat Text', sans-serif;
     --main-font: 'Aleo', serif;
+    --h2-font: 'Red Hat Text', sans-serif;
 }
 body{
     margin: 0;
@@ -11,6 +12,18 @@ body{
 .wrapper{
     margin: 0 auto;
     max-width: 1440px;
+}
+h1{
+    font-family: var(--main-font) ;
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+}
+h2{
+    font-family: var(--h2-font);
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
 }
 
 /* header */
@@ -30,7 +43,7 @@ body{
 }
 .header-logo{
     height: 31px;
-    width: 216px;
+    width: 15%;
     padding-left: 50px;
     padding-bottom: 10px;
 }
@@ -74,11 +87,6 @@ body{
     padding:0;
     color: white;
 }
-h1{
-    font-size: 80px;
-    padding: 0;
-    margin: 0;
-}
 .face-content p{
     font-size:20px;
     margin-top: 30px;
@@ -121,4 +129,15 @@ h1{
     font-style: italic;
     color:#F2785C;
     opacity: 0.7;
+}
+/* main-content */
+.header-h2{
+    margin: 0;
+    padding: 0;
+}
+.box-step{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #F2785C;
 }
