@@ -31,11 +31,22 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .header-h2{
     margin: 0;
     padding: 0;
     text-align: center;
+}
+.button{
+    color: white;
+    font-family: var(--button-font);
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #0D606F;
+    border: none;
 }
 
 /* header */
@@ -79,16 +90,7 @@ h2{
     list-style-type: none;
     /* padding-left: -40px; */
 }
-.login-button{
-    color: white;
-    font-family: var(--button-font);
-    font-size: 16px;
-    padding: 10px 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-color: #0D606F;
-    border: none;
-}
+
 /* face-content */
 .face-content{
     font-family: var(--main-font) ;
@@ -212,4 +214,43 @@ h2{
     margin-right: 5px;
     border-radius: 50%;
     background-color: #F2785C;
+}
+.button-find{
+    margin-top: 40px;
+    display: block;
+    position: relative;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+}
+.button-find img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 7px;
+    left:31px;
+
+}
+.button-find span{
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 81px;
+}
+/* TRAVEL STORIES */
+.story{
+    padding: 0px;
+    width: 1200px;
+    height: 250px;
+}
+.footer-img{
+    background-image: url(assets/img/background-footer.jpg);
+}
+.h2-stories{
+    margin-top: 80px;
+}
+.story img{
+    float: left;
 }
