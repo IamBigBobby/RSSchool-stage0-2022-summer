@@ -27,6 +27,13 @@ h2{
     line-height: 53px;
     color: #F2785C;
 }
+h3{
+    font-family: var(--main-font);
+    font-size: 35px;
+    padding: 0px;
+    margin-top: 0px;
+    color: #0D606F;
+}
 .section{
     display: flex;
     flex-direction: column;
@@ -241,16 +248,71 @@ h2{
 }
 /* TRAVEL STORIES */
 .story{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 0px;
     width: 1200px;
     height: 250px;
+    margin-bottom: 30px;
 }
-.footer-img{
-    background-image: url(assets/img/background-footer.jpg);
+.stories-container{
+    margin-top: 40px;
 }
 .h2-stories{
     margin-top: 80px;
 }
 .story img{
-    float: left;
+    display: block;
+}
+.story-text-container{
+    margin-left: 35px;
+    font-family: var(--main-font);
+    color: #0D606F;
+    font-size: 20px;
+}
+.stories-container p{
+    margin-bottom: 0px;
+}
+.stories-container a{
+    display: block;
+    margin-top: 0px;
+}
+.footer-img{
+    background-image: url(assets/img/background-footer.jpg);
+}
+.blur-img{
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 35px;
+}
+.section-stories button{
+    margin-top: 20px;
+    margin-bottom: 41px;
+}
+/* footer */
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+.empty-block{
+    width: 141px;
+    height: 21px;
+    border: 1px solid red;
+}
+.rights{
+    width: 260px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 16px;
+    color: white;
+}
+.social{
+    width: 141px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
