@@ -121,8 +121,8 @@ h3{
 }
 .find-menu input[type="text"]{
     padding-top: 32px;
-    padding: 41px;
-    width: 800px;
+    padding: 31px;
+    width: 830px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
     border: none;
@@ -137,7 +137,7 @@ h3{
     height: 59px;
     background-color:#0D606F;
     right: 20px;
-    top: 20px;
+    top: 15px;
     border-radius: 10px;
     font-family: var(--button-font);
     color: white;
@@ -160,6 +160,7 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
 }
 .block-step{
     display: flex;
@@ -287,7 +288,7 @@ h3{
 }
 .section-stories button{
     margin-top: 20px;
-    margin-bottom: 41px;
+    margin-bottom: 31px;
 }
 /* footer */
 .footer-section{
@@ -295,21 +296,21 @@ h3{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid red;
 }
 .empty-block{
     width: 141px;
     height: 21px;
-    border: 1px solid red;
 }
 .rights{
-    width: 260px;
+    font-family: var(--main-font);
+    width: 280px;
     height: 21px;
     line-height: 21px;
     font-size: 16px;
     color: white;
 }
 .social{
+    /* padding-left: 170px; */
     width: 141px;
     display: flex;
     align-items: center;
