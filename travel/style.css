@@ -2,6 +2,9 @@
 /* *{
     border: 1px solid red;
 } */
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --nav-font: 'Red Hat Text', sans-serif;
     --button-font: 'Red Hat Text', sans-serif;
@@ -58,6 +61,11 @@ h3{
     background-color: #0D606F;
     border: none;
 }
+.button:hover{
+    cursor: pointer;
+    color: rgb(202, 74, 74);
+    transition: 2s;
+}
 
 /* header */
 .header-img{
@@ -92,14 +100,16 @@ h3{
 }
 .nav-link a{
     display: block;
-    /* line-height: 50px; */
     margin: 0;
     padding: 0;
-    transition: .3s;
     font-size: 16px;
     text-decoration: none;
     color: white;
     list-style-type: none;
+}
+.nav-link a:hover{
+    transition: 2s;
+    color:royalblue;
 }
 
 /* face-content */
@@ -148,6 +158,11 @@ h3{
     color: white;
     font-size: 24px;
     border: none;
+}
+.find-menu input[type="submit"]:hover{
+    cursor: pointer;
+    color: rgb(202, 74, 74);
+    transition: 2s;
 }
 .find-menu input::placeholder{
     color: black;
@@ -294,7 +309,6 @@ h3{
     height: 1270px;
 }
 .section-stories button{
-    border: 1px solid red;
     display: block;
     margin-top: 10px;
 }
@@ -313,7 +327,6 @@ h3{
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
 }
 .empty-block{
     width: 141px;
@@ -329,7 +342,6 @@ h3{
 }
 .social ul{
     /* padding-left: 170px; */
-    border: 1px solid red;
     width: 141px;
     padding: 0;
     margin: 0;
