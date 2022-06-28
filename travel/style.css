@@ -1,4 +1,7 @@
 /* general */
+/* *{
+    border: 1px solid red;
+} */
 :root{
     --nav-font: 'Red Hat Text', sans-serif;
     --button-font: 'Red Hat Text', sans-serif;
@@ -63,20 +66,22 @@ h3{
 }
 .header-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     background: rgba(242, 120, 92, 0.7);
     height: 90px;
+    padding-left: 120px;
+    padding-right: 120px;
     font-family: var(--nav-font);
     font-size: 16px;
 }
 .header-logo{
     height: 31px;
-    width: 15%;
-    padding-left: 50px;
+    width: 216px;
     padding-bottom: 10px;
 }
+
 .navigation{
     display: flex;
     justify-content: space-between;
@@ -84,7 +89,6 @@ h3{
     margin: 0;
     padding: 0;
     width: 550px;
-    padding-left: 10px;
 }
 .nav-link a{
     display: block;
@@ -92,10 +96,10 @@ h3{
     margin: 0;
     padding: 0;
     transition: .3s;
+    font-size: 16px;
     text-decoration: none;
     color: white;
     list-style-type: none;
-    /* padding-left: -40px; */
 }
 
 /* face-content */
@@ -111,6 +115,7 @@ h3{
 .face-content p{
     font-size:20px;
     margin-top: 30px;
+    font-family: var(--main-font);
 }
 /* .find-menu */
 .find-menu{
@@ -159,8 +164,8 @@ h3{
 .three-steps{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    width: 1177px;
 }
 .block-step{
     display: flex;
@@ -281,21 +286,34 @@ h3{
 }
 .footer-img{
     background-image: url(assets/img/background-footer.jpg);
+    height: 1331px;
 }
 .blur-img{
     background-color: rgba(255, 255, 255, 0.7);
     margin-top: 35px;
+    height: 1270px;
 }
 .section-stories button{
-    margin-top: 20px;
-    margin-bottom: 31px;
+    border: 1px solid red;
+    display: block;
+    margin-top: 10px;
 }
 /* footer */
+.footer-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
 .footer-section{
+    width: 100%;
+    padding-left: 121px;
+    padding-right: 121px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    border: 1px solid red;
 }
 .empty-block{
     width: 141px;
@@ -309,11 +327,44 @@ h3{
     font-size: 16px;
     color: white;
 }
-.social{
+.social ul{
     /* padding-left: 170px; */
+    border: 1px solid red;
     width: 141px;
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    list-style: none;
+}
+
+/* link github */
+.empty-block{
+    position: relative;
+    padding-left: 40px;
+}
+.github-footer::before{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url(assets/svg/iconmonstr-github-1.svg);
+    left: 0;
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.github-link-footer{
+    display: block;
+    line-height: 35px;
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    text-decoration: none;
+    color: white;
+}
+.github-link-footer:hover{
+    text-decoration: underline;
 }
