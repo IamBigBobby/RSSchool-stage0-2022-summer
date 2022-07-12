@@ -1,5 +1,12 @@
-console.log(
-    "некоторые размеры не соответсвуют макету \n
-    есть два предупреждения waring\n"
-
-)
+// Burger header
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.header-nav');
+    const menuCloseItem = document.querySelector('.header-nav-close')
+    burgerItem.addEventListener('click', () =>{
+        menu.classList.add('header-nav-active');
+    });
+    menuCloseItem.addEventListener('click', () =>{
+        menu.classList.remove('header-nav-active');
+    })
+}())
