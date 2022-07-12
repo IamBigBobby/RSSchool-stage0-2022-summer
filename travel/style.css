@@ -316,8 +316,11 @@ h3{
 .h2-stories{
     margin-top: 80px;
 }
-.story img{
+/* .story img{
     display: block;
+} */
+.story-small-img{
+    display: none;
 }
 .story-text-container{
     margin-left: 35px;
@@ -427,13 +430,33 @@ h3{
     .face-content h1, .face-content p, .button-login, .header-logo{
         display: none;
     }
-    body{
-        font-size: 16px;
-    }
     .wrapper{
         margin: 0 auto;
         min-width: 390px;
         overflow: hidden;
+    }
+    .button-find{
+        margin-top: 10px;
+        display: block;
+        position: relative;
+        width: 92px;
+        height: 30px;
+        text-align: center;
+        font-size: 11px;
+    }
+    .button-find img{
+        display: block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 9px;
+        left:10px;
+    }
+    .button-find span{
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: 25px;
     }
     /* media header */
     .header-img{
@@ -592,14 +615,59 @@ h3{
         justify-content: center;
         position: absolute;
         top: 190px;
-        border: 1px solid red;
+        left: 150px;
     }
-    .circles-block-390 circle{
+    .circles-block-390 .circle-390{
         width: 8px;
         height: 8px;
         margin-left: 5px;
         margin-right: 5px;
         border-radius: 50%;
         background-color: #F2785C;
+    }
+    /* travel stories */
+    .blur-img{
+        margin-top: 0;
+        height: 628px;
+    }
+    .h2-stories{
+        margin-top: 20px;
+    }
+    .story{
+        width: 360px;
+        height: 130px;
+        margin-bottom: 15px;
+    }
+    .story-big-img{       
+        display: none;
+    }
+    .story-small-img{
+        display: block;
+    }
+    .story-text-container{
+        margin-left: 10px;
+        font-family: var(--main-font);
+        color: #0D606F;
+        font-size: 9px;
+    }
+    .stories-container{
+        margin-top: 10px;
+    }
+    h3{
+        font-size: 11px;
+    }
+    .footer-img{
+        background-image: url(assets/img/background_footer_390.png);
+        height: 693px;
+    }
+    .section-stories button{
+        margin-top: 0px;
+    }
+    /* footer */
+    .empty-block{
+        display: none;
+    }
+    .rights{
+        display: none;
     }
 }
