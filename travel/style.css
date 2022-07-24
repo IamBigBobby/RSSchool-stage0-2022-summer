@@ -671,3 +671,118 @@ h3{
         display: none;
     }
 }
+
+
+
+
+/* travel_3 */
+/* log in */
+.log-in-pop-up{
+    display: none; 
+    /* ВОТ ТУТ ВКЛЮЧИТЬ LOG IN!!!!!!!!!!!!!!!!!!!! */
+    position: fixed;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    height: 650px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    border-radius: 10px;
+    z-index: 1000000;
+    left: 30%;
+
+}
+.log-in-pop-up .login{
+    font-family: var(--main-font);
+    font-size: 32px;
+    color: #0D606F;
+}
+.pop-up-button{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 560px;
+    height: 46px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: var(--button-font);
+}
+.pop-up-button img{
+    padding-right: 10px;
+}
+
+.facebook{
+    background-color: #1877F2;
+    color: white;
+}
+.or{
+    position: relative;
+    font-family: var(--main-font);
+    color: #0D606F80;
+}
+.or::before{
+    display: block;
+    width: 265px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #0D606F;
+    top: 50%;
+    right: 20px;
+}
+.sign-in-button{
+    background-color: #0D606F;
+    color: white;
+}
+.or::after{
+    display: block;
+    width: 265px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #0D606F;
+    top: 50%;
+    left: 20px;
+}
+.field-name{
+    font-family: var(--main-font);
+    padding-bottom: 0px;
+}
+.help-link{
+    text-align: center;
+    font-family: var(--main-font);
+    border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+    padding-bottom: 20px;
+}
+.help-link a{
+    color: #0D606F;
+}
+.under-help-link{
+    text-align: center;
+    font-family: var(--main-font);
+    color: rgba(13, 96, 111, 0.5);
+}
+.under-help-link a{
+    color: #0D606F;
+}
+
+/* sign up */
+.sign-up-pop-up{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    height: 450px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    border-radius: 10px;
+    z-index: 1000000;
+    left: 30%;
+}
+.sign-up-pop-up .login{
+    font-family: var(--main-font);
+    font-size: 32px;
+    color: #0D606F;
+}
+.under-help-link-create{
+    border-top: 1px solid rgba(13, 96, 111, 0.5);
+}
