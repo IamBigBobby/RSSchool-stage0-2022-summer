@@ -22,12 +22,10 @@
         popupBackgound.classList.add('log-in-pop-up-background-active');
         popUpContent.classList.add('log-in-pop-up-active');
     });
-
-
-
     popupBackgound.addEventListener('click', () =>{
         popupBackgound.classList.remove('log-in-pop-up-background-active');
-        popUpContent.classList.remove('log-in-pop-up-active');    
+        popUpContent.classList.remove('log-in-pop-up-active');
+        popUpSingUp.classList.remove('sign-up-pop-up-active'); 
     }
         )
 
@@ -44,9 +42,17 @@
     }
     document.querySelector('.sign-in-button').addEventListener('click', welcome)
 
+// swap from log in to register
 
 
+    const popUpSingUp = document.querySelector('.sign-up-pop-up');
+    const registerLink = document.querySelector('.register');
 
+    registerLink.addEventListener('click', () =>{
+        popUpSingUp.classList.add('sign-up-pop-up-active');
+        popUpContent.classList.remove('log-in-pop-up-active');
+
+    })
 }())
 
 
