@@ -677,11 +677,27 @@ h3{
 
 /* travel_3 */
 /* log in */
-.log-in-pop-up{
-    display: none; 
-    /* ВОТ ТУТ ВКЛЮЧИТЬ LOG IN!!!!!!!!!!!!!!!!!!!! */
+.log-in-pop-up-background{
+    /* display: none;  */
+    width: 100%;
+    height: 100%;
     position: fixed;
-    /* display: flex; */
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10000;
+    transform: translateY(-100%);
+    transition: .4s;
+}
+.log-in-pop-up-background-active{
+    transform: translateY(0);
+}
+.log-in-pop-up{
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 650px;
@@ -689,8 +705,12 @@ h3{
     background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
     border-radius: 10px;
     z-index: 1000000;
-    left: 30%;
-
+    margin: 0 auto;
+    transform: translateY(-100%);
+    transition: .4s;
+}
+.log-in-pop-up-active{
+    transform: translateY(0);
 }
 .log-in-pop-up .login{
     font-family: var(--main-font);
@@ -768,7 +788,8 @@ h3{
 /* sign up */
 .sign-up-pop-up{
     position: fixed;
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 650px;
@@ -776,7 +797,7 @@ h3{
     background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
     border-radius: 10px;
     z-index: 1000000;
-    left: 30%;
+    left: 35%;
 }
 .sign-up-pop-up .login{
     font-family: var(--main-font);

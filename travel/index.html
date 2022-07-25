@@ -16,26 +16,28 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="log-in-pop-up">
-            <p class="login">Login into your account</p>
-            <button class="facebook pop-up-button">
-                <img src="assets\svg\facebook.svg" alt="facebook">
-                Sign In in facebook
-            </button>
-            <button class="google pop-up-button">
-                <img src="assets\svg\Google Logo.svg" alt="google">
-                Sign In in Google
-            </button>
-            <div class="or">or</div>
-            <form class="log-in-area" action="#">
-                <p class="field-name">email</p>
-                <input class="pop-up-button" type="text">
-                <p class="field-name">Password</p>
-                <input class="pop-up-button" type="password">
-                <p><input class="pop-up-button sign-in-button" type="button" value="Sign In"></p>
-                <p class="help-link"><a href="#">Forgot your password?</a></p>
-            </form>
-            <p class="under-help-link">Don't have an account? <a href="#">Register</a></p>
+        <div class="log-in-pop-up-background-wrapper">
+            <div class="log-in-pop-up-background"></div>
+            <div class="log-in-pop-up">
+                <p class="login">Login into your account</p>
+                <button class="facebook pop-up-button">
+                    <img src="assets\svg\facebook.svg" alt="facebook">
+                    Sign In in facebook
+                </button>
+                <button class="google pop-up-button">
+                    <img src="assets\svg\Google Logo.svg" alt="google">
+                    Sign In in Google
+                </button>
+                <div class="or">or</div>
+                <form class="log-in-area" action=''>
+                    <p class="field-name">email</p>
+                    <input class="pop-up-button email" type="text">
+                    <p class="field-name">Password</p>
+                    <input class="pop-up-button password" type="password">
+                    <input class="sign-in-button pop-up-button" type="submit" value="Sign In">
+                </form>
+                <p class="under-help-link">Don't have an account? <a href="#">Register</a></p>
+            </div>
         </div>
         <div class="sign-up-pop-up">
             <p class="login">Create account</p>
@@ -46,7 +48,7 @@
                 <input class="pop-up-button" type="password">
                 <p><input class="pop-up-button sign-in-button" type="button" value="Sign In"></p>
             </form>
-            <p class="under-help-link">Don't have an account? <a href="#">Register</a></p>
+            <p class="under-help-link under-help-link-create">Don't have an account? <a href="#">Register</a></p>
         </div>
         <section class="header">
             <div class="header-img">
