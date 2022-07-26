@@ -109,6 +109,9 @@ h3{
     color: white;
     list-style-type: none;
 }
+.account-mobile-link{
+    display: none;
+}
 .nav-link a:hover{
     transition: 2s;
     color:royalblue;
@@ -237,11 +240,29 @@ h3{
 /* section-destinations */
 .section-destinations{
     margin-top: 80px;
+    position: relative;
 }
+/* slider-task */
+.button-prev{
+    width: 280px;
+    height: 800px;
+    position: absolute;
+    top: 93px;
+    left: 0;
+}
+.button-next{
+    width: 280px;
+    height: 800px;
+    position: absolute;
+    top: 93px;
+    right: 0;
+}
+/* end slider-task */
 .img-photo{
     position: relative;
     margin-left: 30px;
     margin-right: 30px;
+    transition: all ease 1s;
 }
 .img-photo p{
     position: absolute;
@@ -255,6 +276,8 @@ h3{
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    position: relative;
+    transition: all ease 1s;
 }
 .img-destinations-390{
     display: none;
@@ -271,9 +294,17 @@ h3{
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 50%;
-    background-color: #F2785C;
+}
+.circle-common{
+    background-color: rgba(242, 120, 92, 0.5);;
+}
+.circle-active{
+    background-color:  #F2785C;;
 }
 .circles-block-390{
+    display: none;
+}
+.arrow-390{
     display: none;
 }
 .button-find{
@@ -427,7 +458,7 @@ h3{
         font-size: var(--small-font);
         font-weight: 500;
     }
-    .face-content h1, .face-content p, .button-login, .header-logo{
+    .face-content h1, .face-content p, .button-login, .header-logo, .button-prev, .button-next{
         display: none;
     }
     .wrapper{
@@ -523,6 +554,9 @@ h3{
     .nav-link{
         margin-bottom: 10px;
     }
+    .account-mobile-link{
+        display: block;
+    }
     .nav-link:nth-last-child(){
         margin-bottom: 0px;
     }
@@ -594,10 +628,29 @@ h3{
         display: none;
     }
     .img-destinations-390{
-        display: block;
+        display: flex;
         position: relative;
+        transition: all ease 1s;
     }
-    .img-destinations-390 p{
+    .arrow-390{
+        display: block;
+        position: absolute;
+        z-index: 10000;
+    }
+    .arrow-390-left{
+        transform: rotate(180deg);
+        left: 20px;
+    }
+    .arrow-390-right{
+        right: 20px;
+    }
+    .img-photo-destinations-390{
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .img-photo-destinations-390 p{
     position: absolute;
     top: 0;
     left: 15px;
