@@ -32,7 +32,7 @@ function getTimeOfDay(){
         return 'morning';
     }
     else if (hours >= 12 && hours < 18){
-        return 'day';
+        return 'afternoon';
     }
     else if(hours >= 18)
     {
