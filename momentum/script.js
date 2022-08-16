@@ -1,5 +1,4 @@
 import playList from '../playList.js';
-console.log(playList);
 
 // watch and date
 const time = document.querySelector('.time');
@@ -66,7 +65,6 @@ const body = document.querySelector('body')
 let minNumber = 1;
 let maxNumber = 20
 let randomNum = '';
-console.log(randomNum)
 function getRandomNum(minNumber, maxNumber){
  minNumber = Math.ceil(minNumber);
  maxNumber = Math.floor(maxNumber);
@@ -198,7 +196,6 @@ playBtnNext.addEventListener('click', playNext);
 playBtnPrev.addEventListener('click', playPrev)
 
 playList.forEach(element => {
-    console.log(element)
     const li = document.createElement('li');
     li.classList.add('li');
     li.textContent = element['title'];
